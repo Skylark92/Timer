@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    font-family: "Pretendard-Regular";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.ir {
+    position: absolute;
+    clip-path: inset(1px, 1px);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+body {
+    background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #f0f4ff 0%, #a5b6ee 100%);
+}
+
+/* 로고 이미지 */
+header .logo {
+    width: 244px;
+    height: 48px;
+}
+
+/* 앱 바탕 설정 */
+.app {
+    width: 400px;
+    height: 360px;
+    background: linear-gradient(144.07deg, #5572bb 2.13%, #374b7c 102.97%);
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+    border-radius: 16px;
+    padding: 48px 44px 40px;
+}
+
+.app hr {
+    margin: 0;
+    padding: 0;
+    color: #3d538a;
+}
+
+/* 앱 제목 */
+.app .app-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* 시간 영역 설정 */
+.app .timer-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+fieldset legend {
+    color: #a5b6ee;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.timer-wrapper input {
+    width: 80px;
+    height: 80px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(314.28deg, #304577 0%, #4c65a0 83%);
+    border: 1px solid #354971;
+    border-radius: 4px;
+    padding: 16px 14px 16px 13px;
+}
+
+.timer-wrapper input::placeholder {
+    color: white;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.timer-wrapper img {
+    display: block;
+    width: 6px;
+    height: 26px;
+}
+
+/* 버튼 설정 */
+.app button {
+    width: 112px;
+    height: 48px;
+    border-radius: 50px;
+    background: #324577;
+    border: none;
+    padding: 16px 23px 15px 27px;
+}
+
+.app button img {
+    display: block;
+    width: 66px;
+    height: 17px;
+}
+
+.able {
+    background: antiquewhite;
+}
