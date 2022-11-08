@@ -33,20 +33,21 @@ const 초기화버튼 = app.querySelector(".reset-btn");
 let 상태 = false;
 
 시작버튼.addEventListener("click", () => {
-    console.log("되나");
-    초입력.value++;
     시계();
 });
 
 function 시계() {
-    let 시 = 시입력.value;
-    let 분 = 분입력.value;
-    let 초 = 초입력.value;
+    let 시간 = 시입력.value * 3600 + 분입력.value * 60 + 초입력.value * 1;
 
-    if (!시 && !분 && !초) {
+    시입력.value = parseInt((시간 - (분입력.value * 60 + 초입력.value * 1)) / 3600);
+    분입력.value = parseInt((시간 - (시입력.value * 3600 + 초입력.value * 1)) / 60);
+    초입력.value = parseInt(시간 - (시입력.value * 3600 + 분입력.value * 60));
+
+    if (!시간) {
         return console.log("안돼");
     } else {
-        초입력.value -= 1;
+        console.log("돌고있나", 시간);
+        시간--;
     }
     setTimeout(시계, 1000);
 }
